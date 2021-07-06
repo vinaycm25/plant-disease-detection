@@ -7,7 +7,7 @@ from tensorflow import keras
 from keras.preprocessing.image import load_img, img_to_array
 
 app = Flask(__name__)
-model = tf.keras.models.load_model('effnetb0tl')
+model = tf.keras.models.load_model('assets/model/effnetb0tl')
 
 
 @app.route('/')
