@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 import PIL
 import json
 from tensorflow import keras
-from keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 app = Flask(__name__)
 model = tf.keras.models.load_model('assets/model/effnetb0tl')
